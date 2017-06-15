@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.25.0",
+    "babel-register": "^6.24.1",
     "dotenv": "^4.0.0",
     "express": "~4.11.x",
     "kerberos": "~0.0.x",
@@ -19,11 +20,10 @@
     "polyfill": "^0.1.0"
   },
   "scripts": {
-    "start": "babel-node index.js",
-    "dev": "nodemon index.js --exec babel-node"
+    "start": "node index.js",
   },
   "engines": {
-    "node": "6.2.0"
+    "node": "7.9.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
