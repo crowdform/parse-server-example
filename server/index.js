@@ -34,6 +34,7 @@ const dashboard = new ParseDashboard({
       "user":"ewan@crowdform.co.uk",
       "pass":"pass"
     }
+  ]
 });
 
 if(process.env.NODE_ENV !== 'production') {
