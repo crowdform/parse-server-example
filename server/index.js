@@ -12,7 +12,6 @@ const api = new ParseServer(config);
 app.use('/parse', api);
 
 const dashboard = new ParseDashboard({
-  allowInsecureHTTP: true,
   apps: [
     {
       serverURL: config.serverURL,
@@ -35,7 +34,7 @@ const dashboard = new ParseDashboard({
       "pass":"pass"
     }
   ]
-});
+}, config.allowInsecureHTTP);
 
 if(process.env.NODE_ENV !== 'production') {
   app.use('/dashboard', dashboard);

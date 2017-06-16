@@ -5,5 +5,6 @@ export default {
   appId: process.env.APP_ID || 'loop-server',
   masterKey: process.env.MASTER_KEY || 'myMasterKey', // Keep this key secret!
   fileKey: 'optionalFileKey',
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse' // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse', // Don't forget to change to https if needed,
+  allowInsecureHTTP: true
 }
