@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-stage-0": "^6.24.1",
@@ -19,8 +20,7 @@
     "parse": "~1.8.0",
     "parse-dashboard": "^1.0.28",
     "parse-server": "*",
-    "polyfill": "^0.1.0",
-    "babel-cli": "^6.24.1"
+    "polyfill": "^0.1.0"
   },
   "scripts": {
     "start": "node index.js"
