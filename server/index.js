@@ -12,6 +12,7 @@ const api = new ParseServer(config);
 app.use('/parse', api);
 
 const dashboard = new ParseDashboard({
+  allowInsecureHTTP: true,
   apps: [
     {
       serverURL: config.serverURL,
@@ -19,7 +20,20 @@ const dashboard = new ParseDashboard({
       masterKey: config.masterKey,
       appName: config.appName
     }
-  ]
+  ],
+  users: [
+    {
+      "user":"leo@crowdform.co.uk",
+      "pass":"pass"
+    },
+    {
+      "user":"olivia@crowdform.co.uk",
+      "pass":"pass"
+    },
+    {
+      "user":"ewan@crowdform.co.uk",
+      "pass":"pass"
+    }
 });
 
 if(process.env.NODE_ENV !== 'production') {
