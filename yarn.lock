@@ -145,8 +145,8 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
 aws-sdk@^2.2.46:
-  version "2.70.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.70.0.tgz#4163d94ac9e6a82f6a073ab74f8ae3c28a0a7534"
+  version "2.71.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.71.0.tgz#629e49d48a95874b77ed50ec9b621633ec83a8ef"
   dependencies:
     buffer "5.0.6"
     crypto-browserify "1.0.9"
@@ -1115,7 +1115,7 @@ data-uri-to-buffer@0:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-0.0.4.tgz#46e13ab9da8e309745c8d01ce547213ebdb2fe3f"
 
-debug@2, debug@2.6.8:
+debug@2, debug@2.6.8, debug@^2.1.1, debug@^2.2.0:
   version "2.6.8"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
   dependencies:
@@ -1127,7 +1127,7 @@ debug@2.6.1:
   dependencies:
     ms "0.7.2"
 
-debug@2.6.7, debug@^2.1.1, debug@^2.2.0:
+debug@2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.7.tgz#92bad1f6d05bbb6bba22cca88bcd0ec894c2861e"
   dependencies:
