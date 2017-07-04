@@ -43,6 +43,8 @@ if(process.env.NODE_ENV !== 'production') {
 
 app.get('/', (req, res) => res.redirect(301, '/parse'));
 
+app.get('/search', require('./api').default);
+
 app.listen(PORT, (err) => {
   if(err) {
     return console.error(err);
