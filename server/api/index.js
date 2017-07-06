@@ -25,23 +25,19 @@ export default (req, res) => {
   // the mega query
   // query location
   // query types
-  // query dates
+  // query dates from day of week and then opening hours
+
   const Venue = db.collection("Venue");
   const Spaces = db.collection("Space");
 
   //
-  // Spaces.find({
-  //   "_p_venue": 'Venue$FOyoeCynTs'
-  // }).then((spaces) => {
-  //   console.log('Spaces', spaces);
-  // });
 
   Venue.find({
     availability: {
       $elemMatch : {
-        "day": 0,
-        "to" : { $gte: "09"},
-        "from": { $lte: "16"},
+        "day": "0",
+        "to" : { $lte: 600},
+        "from": { $gte: 960},
       }
     }
   }, { _id: 1 }).then(function(venues) {
